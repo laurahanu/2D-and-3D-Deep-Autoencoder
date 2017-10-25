@@ -9,9 +9,19 @@ The 3D dataset has a shape of 180x1x160x64x64.
 # Prerequisites
 - Python, Lasagne (developer version), Theano (developer version), Numpy, Matplotlib, scikit-image
 - NVIDIA GPU (5.0 or above)
+# Architectures 
+
+- **2D CAE** 
+<p align="center">
+<img src="2Dcae.png" alt="alt text" width="600" height="300">
+  
+- **3D CAE** 
+<p align="center">
+<img src="3dCAE.png" alt="alt text" width="600" height="300">
+  
 # Results
 
-# 2D CAE
+## 2D CAE
 
 The hyperparameters used were:
 - a learning rate of 0.0005
@@ -30,7 +40,7 @@ The network was trained using 100 epochs (22500 iterations).
 <img src="results/losscae2d.png" alt="alt text" width="650" height="500">
 
 
-# 3D CAE
+## 3D CAE
 Since 180 3D images were considered, the network was trained on 500 epochs with a batchsize of 4 images. A larger batchsize could not be used due
 to GPU memory constraints. Better results might be obtained by tweaking these hyperparameters.
 In order to quickly visualize and monitor the results, different depths of the 3D images were extracted and compared with the original images at the same depth.
